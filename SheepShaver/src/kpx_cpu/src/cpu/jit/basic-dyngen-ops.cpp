@@ -26,13 +26,15 @@
 
 // We need at least 5 general purpose registers
 struct basic_cpu;
-register basic_cpu *CPU asm(REG_CPU);
+basic_cpu *CPU asm(REG_CPU);
 #define DYNGEN_DEFINE_GLOBAL_REGISTER(REG) \
-register uintptr A##REG asm(REG_T##REG); \
-register uint32  T##REG asm(REG_T##REG)
+uintptr A##REG asm(REG_T##REG); \
+uint32  T##REG asm(REG_T##REG)
 DYNGEN_DEFINE_GLOBAL_REGISTER(0);
 DYNGEN_DEFINE_GLOBAL_REGISTER(1);
 DYNGEN_DEFINE_GLOBAL_REGISTER(2);
+
+
 
 
 /**

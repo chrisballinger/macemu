@@ -47,7 +47,7 @@
 #endif
 
 #ifdef USE_SDL_VIDEO
-#include <SDL_events.h>
+#include <SDL/SDL_events.h>
 #endif
 
 #if ENABLE_MON

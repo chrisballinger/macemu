@@ -41,6 +41,7 @@
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <stddef.h>
 #include <string.h>
 #include <signal.h>
@@ -116,7 +117,7 @@
 #define PPC_PROFILE_REGS_USE 0
 #define KPX_MAX_CPUS 1
 #if ENABLE_DYNGEN
-#define PPC_ENABLE_JIT 1
+#define PPC_ENABLE_JIT 0
 #endif
 #if defined(__i386__) || defined(__x86_64__)
 #define DYNGEN_ASM_OPTS 1
@@ -140,33 +141,33 @@ typedef int int16;
 #error "No 2 byte type, you lose."
 #endif
 #if SIZEOF_INT == 4
-typedef unsigned int uint32;
-typedef int int32;
+typedef uint32_t uint32;
+typedef int32_t int32;
 #elif SIZEOF_LONG == 4
-typedef unsigned long uint32;
-typedef long int32;
+typedef uint32_t uint32;
+typedef int32_t int32;
 #else
 #error "No 4 byte type, you lose."
 #endif
 #if SIZEOF_LONG == 8
-typedef unsigned long uint64;
-typedef long int64;
+typedef uint64_t uint64;
+typedef int64_t int64;
 #define VAL64(a) (a ## l)
 #define UVAL64(a) (a ## ul)
 #elif SIZEOF_LONG_LONG == 8
-typedef unsigned long long uint64;
-typedef long long int64;
+typedef uint64_t uint64;
+typedef int64_t int64;
 #define VAL64(a) (a ## LL)
 #define UVAL64(a) (a ## uLL)
 #else
 #error "No 8 byte type, you lose."
 #endif
 #if SIZEOF_VOID_P == 4
-typedef uint32 uintptr;
-typedef int32 intptr;
+typedef uintptr uintptr_t;
+typedef intptr intptr_t;
 #elif SIZEOF_VOID_P == 8
-typedef uint64 uintptr;
-typedef int64 intptr;
+typedef uintptr_t uintptr;
+typedef intptr_t intptr;
 #else
 #error "Unsupported size of pointer"
 #endif

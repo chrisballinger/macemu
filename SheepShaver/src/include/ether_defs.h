@@ -514,7 +514,7 @@ union DL_primitives {
 };
 
 #ifdef PRAGMA_ALIGN_SUPPORTED
-#pragma options align=mac68k
+//#pragma options align=mac68k
 #endif
 
 #ifdef PRAGMA_PACK_SUPPORTED

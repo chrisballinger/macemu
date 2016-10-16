@@ -123,7 +123,7 @@
 #endif
 
 #ifdef USE_SDL
-#include <SDL.h>
+#include <SDL/SDL.h>
 #endif
 
 #ifndef USE_SDL_VIDEO
@@ -247,7 +247,7 @@ uintptr SheepMem::data;						// Top of SheepShaver data (stack like storage)
 
 // Prototypes
 static bool kernel_data_init(void);
-static bool shm_map_address(int kernel_area, uint32 addr);
+static bool shm_map_address(int shared_fd, uint32 kernel_area_size, uintptr_t addr);
 static void Quit(void);
 static void *emul_func(void *arg);
 static void *nvram_func(void *arg);
@@ -365,7 +365,7 @@ static void usage(const char *prg_name)
 	printf("\nUnix options:\n");
 	printf("  --display STRING\n    X display to use\n");
 	PrefsPrintUsage();
-	exit(0);
+	//exit(0);
 }
 
 static bool valid_vmdir(const char *path)
@@ -583,6 +583,7 @@ static bool load_mac_rom(void)
 	uint32 rom_size, actual;
 	uint8 *rom_tmp;
 	const char *rom_path = PrefsFindString("rom");
+    
 	int rom_fd = open(rom_path && *rom_path ? rom_path : ROM_FILE_NAME, O_RDONLY);
 	if (rom_fd < 0) {
 		rom_fd = open(ROM_FILE_NAME2, O_RDONLY);
@@ -1161,15 +1162,24 @@ static bool kernel_data_init(void)
 	int error_string = STR_KD_SHMGET_ERR;
 	uint32 kernel_area_size = (KERNEL_AREA_SIZE + SHMLBA - 1) & -SHMLBA;
 	int kernel_area = shmget(IPC_PRIVATE, kernel_area_size, 0600);
-	if (kernel_area != -1) {
+    
+    // Open shared memory fd
+    //NSTemporaryDirectory
+    int shared_fd = shm_open("/tmp/sheepshaver", O_RDWR | O_CREAT);
+    if (shared_fd < 0) {
+        printf("shm_open error: %s\n", strerror(errno));
+        return false;
+    }
+    
+	if (shared_fd >= 0) {
 		bool mapped =
-			shm_map_address(kernel_area, KERNEL_DATA_BASE & -SHMLBA) &&
-			shm_map_address(kernel_area, KERNEL_DATA2_BASE & -SHMLBA);
+			shm_map_address(shared_fd, kernel_area_size, KERNEL_DATA_BASE & -SHMLBA) &&
+			shm_map_address(shared_fd, kernel_area_size, KERNEL_DATA2_BASE & -SHMLBA);
 
 		// Mark the shared memory segment for removal. This is safe to do
 		// because the deletion is not performed while the memory is still
 		// mapped and so will only be done once the process exits.
-		shmctl(kernel_area, IPC_RMID, NULL);
+		//shmctl(kernel_area, IPC_RMID, NULL);
 		if (mapped)
 			return true;
 
@@ -1187,10 +1197,16 @@ static bool kernel_data_init(void)
  *  Maps the memory identified by kernel_area at the specified addr
  */
 
-static bool shm_map_address(int kernel_area, uint32 addr)
+static bool shm_map_address(int shared_fd, uint32 kernel_area_size, uintptr_t addr)
 {
 	void *kernel_addr = Mac2HostAddr(addr);
-	return shmat(kernel_area, kernel_addr, 0) == kernel_addr;
+    void *mmap_out = mmap(kernel_addr, kernel_area_size, PROT_READ | PROT_WRITE | PROT_EXEC, MAP_FIXED | MAP_SHARED, shared_fd, 0);
+    if (mmap_out == MAP_FAILED) {
+        printf("shm_map_address mmap error: %s\n", strerror(errno));
+        return false;
+    }
+    
+    return mmap_out == kernel_addr;
 }
 
 

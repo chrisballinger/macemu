@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -31,17 +31,13 @@
 		0846E4B314B1264F00574779 /* mathlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CDFD14A99EEF000B1711 /* mathlib.cpp */; };
 		0846E4B514B1265500574779 /* utils-cpuinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CE0214A99EEF000B1711 /* utils-cpuinfo.cpp */; };
 		0846E4B614B1265A00574779 /* ppc-translate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CDF014A99EEF000B1711 /* ppc-translate.cpp */; };
-		0846E4B814B1266000574779 /* ppc-jit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CDEB14A99EEF000B1711 /* ppc-jit.cpp */; };
 		0846E4B914B1266600574779 /* ppc-execute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CDE814A99EEF000B1711 /* ppc-execute.cpp */; };
-		0846E4BC14B1267200574779 /* ppc-dyngen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CDE614A99EEF000B1711 /* ppc-dyngen.cpp */; };
 		0846E4BE14B1267A00574779 /* ppc-decode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CDE414A99EEF000B1711 /* ppc-decode.cpp */; };
 		0846E4C014B1267F00574779 /* ppc-cpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CDE214A99EEF000B1711 /* ppc-cpu.cpp */; };
 		0846E4C114B1268B00574779 /* jit-cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CDCD14A99EEF000B1711 /* jit-cache.cpp */; };
-		0846E4C214B1269600574779 /* basic-dyngen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CDC514A99EEF000B1711 /* basic-dyngen.cpp */; };
 		0846E51314B128ED00574779 /* sheepshaver_glue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CDBB14A99EEF000B1711 /* sheepshaver_glue.cpp */; };
 		0846E52B14B12A0800574779 /* ppc_asm.S in Sources */ = {isa = PBXBuildFile; fileRef = 0846E52314B129DA00574779 /* ppc_asm.S */; };
 		0846E55314B12B0D00574779 /* paranoia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0846E55214B12B0D00574779 /* paranoia.cpp */; };
-		0846E65414B513CE00574779 /* SDL.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0856D17414A9A1A2000B1711 /* SDL.framework */; };
 		0856CFC114A99EF0000B1711 /* adb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CD4B14A99EEF000B1711 /* adb.cpp */; };
 		0856CFC214A99EF0000B1711 /* audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CD4C14A99EEF000B1711 /* audio.cpp */; };
 		0856CFE214A99EF0000B1711 /* cdrom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CD7814A99EEF000B1711 /* cdrom.cpp */; };
@@ -89,7 +85,6 @@
 		0856D07C14A99EF1000B1711 /* thunks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CEC114A99EF0000B1711 /* thunks.cpp */; };
 		0856D07D14A99EF1000B1711 /* timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CEC214A99EF0000B1711 /* timer.cpp */; };
 		0856D07E14A99EF1000B1711 /* about_window_unix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CEC414A99EF0000B1711 /* about_window_unix.cpp */; };
-		0856D08714A99EF1000B1711 /* bincue_unix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CECF14A99EF0000B1711 /* bincue_unix.cpp */; };
 		0856D09814A99EF1000B1711 /* ether_unix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CEE314A99EF0000B1711 /* ether_unix.cpp */; };
 		0856D0AA14A99EF1000B1711 /* main_unix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CEFB14A99EF0000B1711 /* main_unix.cpp */; };
 		0856D10614A99EF1000B1711 /* prefs_unix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CF5A14A99EF0000B1711 /* prefs_unix.cpp */; };
@@ -104,14 +99,12 @@
 		0856D11714A99EF1000B1711 /* user_strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CF7714A99EF0000B1711 /* user_strings.cpp */; };
 		0856D11814A99EF1000B1711 /* video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CF7814A99EF0000B1711 /* video.cpp */; };
 		0856D13F14A99EF1000B1711 /* xpram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CFC014A99EF0000B1711 /* xpram.cpp */; };
-		0856D17514A9A1A2000B1711 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0856D17414A9A1A2000B1711 /* SDL.framework */; };
 		0856D21514A9A6C6000B1711 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0856D21414A9A6C6000B1711 /* IOKit.framework */; };
 		0856D33514A9A704000B1711 /* VMSettingsWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0856D30714A9A704000B1711 /* VMSettingsWindow.nib */; };
 		0856D33914A9A704000B1711 /* VMSettingsController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0856D31214A9A704000B1711 /* VMSettingsController.mm */; };
 		0873A54214AAF18E004F12B7 /* cxxdemangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0873A53F14AAF18E004F12B7 /* cxxdemangle.cpp */; };
 		0873A54314AAF18E004F12B7 /* dyngen.c in Sources */ = {isa = PBXBuildFile; fileRef = 0873A54114AAF18E004F12B7 /* dyngen.c */; };
 		0873A5D614AB80CA004F12B7 /* basic-dyngen-ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0873A5D514AB80CA004F12B7 /* basic-dyngen-ops.cpp */; };
-		0873A5D814AB80E3004F12B7 /* ppc-dyngen-ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0873A5D714AB80E3004F12B7 /* ppc-dyngen-ops.cpp */; };
 		0873A76814ABD151004F12B7 /* config-macosx-x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873A76614ABD151004F12B7 /* config-macosx-x86_64.h */; };
 		0873A76914ABD151004F12B7 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873A76714ABD151004F12B7 /* config.h */; };
 		0873A76A14ABD151004F12B7 /* config-macosx-x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873A76614ABD151004F12B7 /* config-macosx-x86_64.h */; };
@@ -130,16 +123,16 @@
 		08CD42E814B7B8AA009CA2A2 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CD42E714B7B8AA009CA2A2 /* Carbon.framework */; };
 		08D93A16159FE174003B04EC /* clip_macosx64.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08D93A15159FE174003B04EC /* clip_macosx64.mm */; };
 		A7B1921418C35D4700791D8D /* DiskType.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B1921318C35D4700791D8D /* DiskType.m */; };
+		D921666D1DB31FE60059E83C /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9676B1C1DA9D045000D4DC7 /* SDL.framework */; };
+		D9676B1D1DA9D045000D4DC7 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9676B1C1DA9D045000D4DC7 /* SDL.framework */; };
+		D9676B1E1DA9D04D000D4DC7 /* SDL.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D9676B1C1DA9D045000D4DC7 /* SDL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9734FDF1DB3218500234FDB /* bincue_unix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9734FDE1DB3218500234FDB /* bincue_unix.cpp */; };
+		D9734FE21DB32ADB00234FDB /* newworld86.rom in Resources */ = {isa = PBXBuildFile; fileRef = D9734FE11DB32ADB00234FDB /* newworld86.rom */; };
+		D9734FE31DB3332300234FDB /* libkpx_cpu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0846E49A14B124DE00574779 /* libkpx_cpu.a */; };
+		D9734FE51DB3333000234FDB /* libclip64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0885A5341593E47F005C4F7B /* libclip64.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		082AC26714AA5A4800071F5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0856CCAE14A99DE0000B1711 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 082AC25114AA59B600071F5E;
-			remoteInfo = lowmem;
-		};
 		0846E4A614B1253500574779 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0856CCAE14A99DE0000B1711 /* Project object */;
@@ -160,13 +153,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0873A67314AB8AE9004F12B7;
 			remoteInfo = "ppc-execute-impl";
-		};
-		0846E52D14B12A2E00574779 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0856CCAE14A99DE0000B1711 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0846E52714B129EE00574779;
-			remoteInfo = ppc_asm;
 		};
 		0873A60214AB83CC004F12B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -205,7 +191,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0846E65414B513CE00574779 /* SDL.framework in Copy Frameworks */,
+				D9676B1E1DA9D04D000D4DC7 /* SDL.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,7 +378,6 @@
 		0856CEC114A99EF0000B1711 /* thunks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = thunks.cpp; path = ../thunks.cpp; sourceTree = SOURCE_ROOT; };
 		0856CEC214A99EF0000B1711 /* timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = timer.cpp; path = ../timer.cpp; sourceTree = SOURCE_ROOT; };
 		0856CEC414A99EF0000B1711 /* about_window_unix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = about_window_unix.cpp; sourceTree = "<group>"; };
-		0856CECF14A99EF0000B1711 /* bincue_unix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bincue_unix.cpp; sourceTree = "<group>"; };
 		0856CED014A99EF0000B1711 /* bincue_unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bincue_unix.h; sourceTree = "<group>"; };
 		0856CEE314A99EF0000B1711 /* ether_unix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ether_unix.cpp; sourceTree = "<group>"; };
 		0856CEFB14A99EF0000B1711 /* main_unix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_unix.cpp; sourceTree = "<group>"; };
@@ -415,7 +400,6 @@
 		0856CF7714A99EF0000B1711 /* user_strings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = user_strings.cpp; path = ../user_strings.cpp; sourceTree = SOURCE_ROOT; };
 		0856CF7814A99EF0000B1711 /* video.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = video.cpp; path = ../video.cpp; sourceTree = SOURCE_ROOT; };
 		0856CFC014A99EF0000B1711 /* xpram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = xpram.cpp; path = ../xpram.cpp; sourceTree = SOURCE_ROOT; };
-		0856D17414A9A1A2000B1711 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
 		0856D21414A9A6C6000B1711 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		0856D30814A9A704000B1711 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/VMSettingsWindow.nib; sourceTree = "<group>"; };
 		0856D31114A9A704000B1711 /* VMSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMSettingsController.h; sourceTree = "<group>"; };
@@ -452,6 +436,9 @@
 		08D93A15159FE174003B04EC /* clip_macosx64.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = clip_macosx64.mm; sourceTree = "<group>"; };
 		A7B1921218C35D4700791D8D /* DiskType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskType.h; sourceTree = "<group>"; };
 		A7B1921318C35D4700791D8D /* DiskType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskType.m; sourceTree = "<group>"; };
+		D9676B1C1DA9D045000D4DC7 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = Vendor/SDL/SDL.framework; sourceTree = "<group>"; };
+		D9734FDE1DB3218500234FDB /* bincue_unix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bincue_unix.cpp; path = ../../../BasiliskII/src/Unix/bincue_unix.cpp; sourceTree = "<group>"; };
+		D9734FE11DB32ADB00234FDB /* newworld86.rom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = newworld86.rom; path = ../../newworld86.rom; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,6 +453,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D921666D1DB31FE60059E83C /* SDL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +468,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0856D17514A9A1A2000B1711 /* SDL.framework in Frameworks */,
+				D9734FE51DB3333000234FDB /* libclip64.a in Frameworks */,
+				D9734FE31DB3332300234FDB /* libkpx_cpu.a in Frameworks */,
+				D9676B1D1DA9D045000D4DC7 /* SDL.framework in Frameworks */,
 				0856D21514A9A6C6000B1711 /* IOKit.framework in Frameworks */,
 				08CD42DC14B7B85B009CA2A2 /* Cocoa.framework in Frameworks */,
 				08CD42E814B7B8AA009CA2A2 /* Carbon.framework in Frameworks */,
@@ -536,6 +526,7 @@
 		0856CCAC14A99DE0000B1711 = {
 			isa = PBXGroup;
 			children = (
+				D9734FE11DB32ADB00234FDB /* newworld86.rom */,
 				0856CCC814A99E30000B1711 /* Sources */,
 				08CD42DF14B7B865009CA2A2 /* Frameworks */,
 				0856CCC214A99E1C000B1711 /* Products */,
@@ -902,10 +893,10 @@
 		0856CEC314A99EF0000B1711 /* Unix */ = {
 			isa = PBXGroup;
 			children = (
+				D9734FDE1DB3218500234FDB /* bincue_unix.cpp */,
 				0873A58E14AAF539004F12B7 /* basic-dyngen-ops.hpp */,
 				082AC25614AA59DA00071F5E /* Darwin */,
 				0856CEC414A99EF0000B1711 /* about_window_unix.cpp */,
-				0856CECF14A99EF0000B1711 /* bincue_unix.cpp */,
 				0856CED014A99EF0000B1711 /* bincue_unix.h */,
 				083E370A16EFE85000CCCA59 /* disk_sparsebundle.cpp */,
 				083E370B16EFE85000CCCA59 /* disk_unix.h */,
@@ -976,10 +967,10 @@
 		08CD42DF14B7B865009CA2A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9676B1C1DA9D045000D4DC7 /* SDL.framework */,
 				08CD42E714B7B8AA009CA2A2 /* Carbon.framework */,
 				08CD42DB14B7B85B009CA2A2 /* Cocoa.framework */,
 				0856D21414A9A6C6000B1711 /* IOKit.framework */,
-				0856D17414A9A1A2000B1711 /* SDL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1097,20 +1088,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0856CCC714A99E1D000B1711 /* Build configuration list for PBXNativeTarget "SheepShaver" */;
 			buildPhases = (
-				0846E65E14B513DF00574779 /* Copy Frameworks */,
 				0856CCBD14A99E1C000B1711 /* Resources */,
 				0856CCBE14A99E1C000B1711 /* Sources */,
 				0856CCBF14A99E1C000B1711 /* Frameworks */,
-				082AC26A14AA5A5A00071F5E /* Run lowmem */,
-				08CD43CF14B7BD01009CA2A2 /* Change SDL load path */,
+				0846E65E14B513DF00574779 /* Copy Frameworks */,
 				08CD3F3214B665E1009CA2A2 /* Preprocess Info.plist */,
+				D9734FE01DB327AD00234FDB /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0846E52E14B12A2E00574779 /* PBXTargetDependency */,
 				0846E4A714B1253500574779 /* PBXTargetDependency */,
-				082AC26814AA5A4800071F5E /* PBXTargetDependency */,
 				0885A53A1593E4BC005C4F7B /* PBXTargetDependency */,
 				0885A53C1593E4BC005C4F7B /* PBXTargetDependency */,
 			);
@@ -1212,8 +1200,11 @@
 /* Begin PBXProject section */
 		0856CCAE14A99DE0000B1711 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+			};
 			buildConfigurationList = 0856CCB114A99DE0000B1711 /* Build configuration list for PBXProject "SheepShaver" */;
-			compatibilityVersion = "Xcode 3.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1246,6 +1237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9734FE21DB32ADB00234FDB /* newworld86.rom in Resources */,
 				0856D05914A99EF1000B1711 /* SheepShaver.icns in Resources */,
 				0856D33514A9A704000B1711 /* VMSettingsWindow.nib in Resources */,
 			);
@@ -1254,21 +1246,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		082AC26A14AA5A5A00071F5E /* Run lowmem */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
-			);
-			name = "Run lowmem";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${BUILT_PRODUCTS_DIR}/lowmem\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"";
-		};
 		0873A62914AB86A7004F12B7 /* Run dyngen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1340,19 +1317,19 @@
 			shellPath = /bin/sh;
 			shellScript = "sed -i '' 's/@PACKAGE_VERSION@/2.4/g' \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"";
 		};
-		08CD43CF14B7BD01009CA2A2 /* Change SDL load path */ = {
+		D9734FE01DB327AD00234FDB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Change SDL load path";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "install_name_tool -change @rpath/SDL.framework/Versions/A/SDL @executable_path/../Frameworks/SDL.framework/Versions/A/SDL \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1373,13 +1350,10 @@
 				0846E4B314B1264F00574779 /* mathlib.cpp in Sources */,
 				0846E4B514B1265500574779 /* utils-cpuinfo.cpp in Sources */,
 				0846E4B614B1265A00574779 /* ppc-translate.cpp in Sources */,
-				0846E4B814B1266000574779 /* ppc-jit.cpp in Sources */,
 				0846E4B914B1266600574779 /* ppc-execute.cpp in Sources */,
-				0846E4BC14B1267200574779 /* ppc-dyngen.cpp in Sources */,
 				0846E4BE14B1267A00574779 /* ppc-decode.cpp in Sources */,
 				0846E4C014B1267F00574779 /* ppc-cpu.cpp in Sources */,
 				0846E4C114B1268B00574779 /* jit-cache.cpp in Sources */,
-				0846E4C214B1269600574779 /* basic-dyngen.cpp in Sources */,
 				0846E51314B128ED00574779 /* sheepshaver_glue.cpp in Sources */,
 				08163340158C125800C449F9 /* ppc-dis.c in Sources */,
 			);
@@ -1444,7 +1418,6 @@
 				0856D07C14A99EF1000B1711 /* thunks.cpp in Sources */,
 				0856D07D14A99EF1000B1711 /* timer.cpp in Sources */,
 				0856D07E14A99EF1000B1711 /* about_window_unix.cpp in Sources */,
-				0856D08714A99EF1000B1711 /* bincue_unix.cpp in Sources */,
 				0856D09814A99EF1000B1711 /* ether_unix.cpp in Sources */,
 				0856D0AA14A99EF1000B1711 /* main_unix.cpp in Sources */,
 				0856D10614A99EF1000B1711 /* prefs_unix.cpp in Sources */,
@@ -1466,6 +1439,7 @@
 				083E372216EFE87200CCCA59 /* tinyxml2.cpp in Sources */,
 				A7B1921418C35D4700791D8D /* DiskType.m in Sources */,
 				087B91BE1B780FFC00825F7F /* sigsegv.cpp in Sources */,
+				D9734FDF1DB3218500234FDB /* bincue_unix.cpp in Sources */,
 				087B91BF1B780FFC00825F7F /* video_blit.cpp in Sources */,
 				087B91C01B780FFC00825F7F /* vm_alloc.cpp in Sources */,
 			);
@@ -1492,7 +1466,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0873A5D814AB80E3004F12B7 /* ppc-dyngen-ops.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1516,11 +1489,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		082AC26814AA5A4800071F5E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 082AC25114AA59B600071F5E /* lowmem */;
-			targetProxy = 082AC26714AA5A4800071F5E /* PBXContainerItemProxy */;
-		};
 		0846E4A714B1253500574779 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0846E49914B124DE00574779 /* kpx_cpu */;
@@ -1535,11 +1503,6 @@
 			isa = PBXTargetDependency;
 			target = 0873A67314AB8AE9004F12B7 /* ppc-execute-impl */;
 			targetProxy = 0846E4C714B126B800574779 /* PBXContainerItemProxy */;
-		};
-		0846E52E14B12A2E00574779 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0846E52714B129EE00574779 /* ppc_asm */;
-			targetProxy = 0846E52D14B12A2E00574779 /* PBXContainerItemProxy */;
 		};
 		0873A60314AB83CC004F12B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1579,10 +1542,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -1592,13 +1551,11 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = 4.0;
 				INSTALL_PATH = /usr/local/bin;
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = lowmem;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Debug;
 		};
@@ -1606,11 +1563,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_PASCAL_STRINGS = NO;
@@ -1618,13 +1571,11 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = 4.0;
 				INSTALL_PATH = /usr/local/bin;
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = lowmem;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1633,24 +1584,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/SDL",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DATADIR=",
 					HAVE_CONFIG_H,
-					USE_JIT,
 					"_GNU_SOURCE=1",
 					_THREAD_SAFE,
 					_REENTRANT,
 				);
-				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = (
 					/Library/Frameworks/SDL.framework/Versions/A/Headers/,
 					./config/,
@@ -1662,10 +1611,7 @@
 					../include,
 				);
 				INSTALL_PATH = /usr/local/lib;
-				PREBINDING = NO;
 				PRODUCT_NAME = kpx_cpu;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = Debug;
 		};
@@ -1673,29 +1619,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_AUTO_VECTORIZATION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/SDL",
+				);
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_SSE3_EXTENSIONS = YES;
-				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
-				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DATADIR=",
 					HAVE_CONFIG_H,
-					USE_JIT,
 					"_GNU_SOURCE=1",
 					_THREAD_SAFE,
 					_REENTRANT,
 				);
-				GCC_VERSION = 4.0;
-				"GCC_VERSION[arch=x86_64]" = 4.2;
 				HEADER_SEARCH_PATHS = (
 					/Library/Frameworks/SDL.framework/Versions/A/Headers/,
 					./config/,
@@ -1707,12 +1646,8 @@
 					../include,
 				);
 				INSTALL_PATH = /usr/local/lib;
-				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.6;
-				PREBINDING = NO;
+				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.9;
 				PRODUCT_NAME = kpx_cpu;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -1720,14 +1655,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = ppc;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = __ASSEMBLY__;
-				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = (
 					../Unix,
 					../include,
@@ -1735,7 +1669,6 @@
 				INSTALL_PATH = /usr/local/lib;
 				PREBINDING = NO;
 				PRODUCT_NAME = ppc_asm;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Debug;
 		};
@@ -1743,13 +1676,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = ppc;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PREPROCESSOR_DEFINITIONS = __ASSEMBLY__;
-				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = (
 					../Unix,
 					../include,
@@ -1757,7 +1688,6 @@
 				INSTALL_PATH = /usr/local/lib;
 				PREBINDING = NO;
 				PRODUCT_NAME = ppc_asm;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1765,14 +1695,60 @@
 		0856CCAF14A99DE0000B1711 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
 		0856CCB014A99DE0000B1711 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -1780,13 +1756,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					ppc,
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(PROJECT_DIR)/Vendor/SDL",
+				);
 				GCC_CW_ASM_SYNTAX = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1801,13 +1776,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DATADIR=",
 					HAVE_CONFIG_H,
-					USE_JIT,
 					"_GNU_SOURCE=1",
 					_THREAD_SAFE,
 					_REENTRANT,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = 4.0;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1824,36 +1797,11 @@
 				INFOPLIST_PREFIX_HEADER = "";
 				INFOPLIST_PREPROCESS = NO;
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
 				OTHER_CFLAGS = "";
-				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
-				OTHER_LDFLAGS = (
-					"-pagezero_size",
-					0x3000,
-					"-Wl,-seg1addr,0x78048000",
-					"-lkpx_cpu",
-					"-lclip",
-				);
-				"OTHER_LDFLAGS[arch=ppc]" = (
-					"-pagezero_size",
-					0x3000,
-					"-Wl,-seg1addr,0x78048000",
-					"-lppc_asm",
-					"-lclip",
-				);
-				"OTHER_LDFLAGS[arch=x86_64]" = (
-					"-pagezero_size",
-					0x3000,
-					"-Wl,-seg1addr,0x78048000",
-					"-lkpx_cpu",
-					"-lclip64",
-				);
+				OTHER_LDFLAGS = "-Wl,-no_pie";
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = SheepShaver;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 				WARNING_LDFLAGS = "";
 			};
 			name = Debug;
@@ -1862,18 +1810,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					ppc,
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(PROJECT_DIR)/Vendor/SDL",
+				);
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_CW_ASM_SYNTAX = NO;
-				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_PASCAL_STRINGS = NO;
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
@@ -1888,14 +1834,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DATADIR=",
 					HAVE_CONFIG_H,
-					USE_JIT,
 					"_GNU_SOURCE=1",
 					_THREAD_SAFE,
 					_REENTRANT,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = 4.0;
-				"GCC_VERSION[arch=x86_64]" = 4.2;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1913,36 +1856,11 @@
 				INFOPLIST_PREFIX_HEADER = "";
 				INFOPLIST_PREPROCESS = NO;
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
 				OTHER_CFLAGS = "";
-				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
-				OTHER_LDFLAGS = (
-					"-pagezero_size",
-					0x3000,
-					"-Wl,-seg1addr,0x78048000",
-					"-lkpx_cpu",
-					"-lclip",
-				);
-				"OTHER_LDFLAGS[arch=ppc]" = (
-					"-pagezero_size",
-					0x3000,
-					"-Wl,-seg1addr,0x78048000",
-					"-lppc_asm",
-					"-lclip",
-				);
-				"OTHER_LDFLAGS[arch=x86_64]" = (
-					"-pagezero_size",
-					0x3000,
-					"-Wl,-seg1addr,0x78048000",
-					"-lkpx_cpu",
-					"-lclip64",
-				);
+				OTHER_LDFLAGS = "-Wl,-no_pie";
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = SheepShaver;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1951,10 +1869,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -1963,14 +1877,12 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = 4.0;
 				INSTALL_PATH = /usr/local/bin;
 				OTHER_CFLAGS = "-mdynamic-no-pic";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = dyngen;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Debug;
 		};
@@ -1978,24 +1890,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_SYMBOL_SEPARATION = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = 4.0;
 				INSTALL_PATH = /usr/local/bin;
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = dyngen;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2004,17 +1910,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_CW_ASM_SYNTAX = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_PASCAL_STRINGS = NO;
 				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = "";
 				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2024,7 +1926,6 @@
 					_THREAD_SAFE,
 					"_GNU_SOURCE=1",
 				);
-				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = (
 					../kpx_cpu/src,
 					../kpx_cpu/include,
@@ -2040,6 +1941,7 @@
 					"-g0",
 					"-fno-reorder-blocks",
 					"-fno-optimize-sibling-calls",
+					"-fno-stack-protector",
 				);
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -2050,7 +1952,6 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "basic-dyngen-ops";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Debug;
 		};
@@ -2058,18 +1959,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = 4.0;
-				"GCC_VERSION[arch=x86_64]" = 4.2;
 				HEADER_SEARCH_PATHS = (
 					../kpx_cpu/src,
 					../kpx_cpu/include,
@@ -2085,6 +1980,7 @@
 					"-g0",
 					"-fno-reorder-blocks",
 					"-fno-optimize-sibling-calls",
+					"-fno-stack-protector",
 				);
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -2095,8 +1991,6 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "basic-dyngen-ops";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2105,18 +1999,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = "";
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = (
 					../kpx_cpu/src,
 					../kpx_cpu/include,
@@ -2142,7 +2031,6 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "ppc-dyngen-ops";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Debug;
 		};
@@ -2150,18 +2038,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = 4.0;
-				"GCC_VERSION[arch=x86_64]" = 4.2;
 				HEADER_SEARCH_PATHS = (
 					../kpx_cpu/src,
 					../kpx_cpu/include,
@@ -2186,8 +2068,6 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "ppc-dyngen-ops";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2205,7 +2085,7 @@
 		0873A67514AB8AE9004F12B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = "ppc-execute-impl";
@@ -2217,16 +2097,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = (
 					/Library/Frameworks/SDL.framework/Versions/A/Headers/,
 					./config/,
@@ -2241,7 +2117,6 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = clip;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Debug;
 		};
@@ -2249,15 +2124,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
-				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = (
 					/Library/Frameworks/SDL.framework/Versions/A/Headers/,
 					./config/,
@@ -2272,7 +2142,6 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = clip;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2281,14 +2150,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = (
 					/Library/Frameworks/SDL.framework/Versions/A/Headers/,
 					./config/,
@@ -2303,7 +2170,6 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = clip64;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = Debug;
 		};
@@ -2311,13 +2177,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
-				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = (
 					/Library/Frameworks/SDL.framework/Versions/A/Headers/,
 					./config/,
@@ -2332,7 +2195,6 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = clip64;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				ZERO_LINK = NO;
 			};
 			name = Release;

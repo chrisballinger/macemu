@@ -68,8 +68,8 @@ static inline uint32 ReadMacInt32(uint32 addr) {return vm_read_memory_4(addr);}
 static inline void WriteMacInt32(uint32 addr, uint32 v) {vm_write_memory_4(addr, v);}
 static inline uint64 ReadMacInt64(uint32 addr) {return vm_read_memory_8(addr);}
 static inline void WriteMacInt64(uint32 addr, uint64 v) {vm_write_memory_8(addr, v);}
-static inline uint32 Host2MacAddr(uint8 *addr) {return vm_do_get_virtual_address(addr);}
-static inline uint8 *Mac2HostAddr(uint32 addr) {return vm_do_get_real_address(addr);}
+static inline uintptr_t Host2MacAddr(uint8 *addr) {return vm_do_get_virtual_address(addr);}
+static inline uint8 *Mac2HostAddr(uintptr_t addr) {return vm_do_get_real_address(addr);}
 static inline void *Mac_memset(uint32 addr, int c, size_t n) {return vm_memset(addr, c, n);}
 static inline void *Mac2Host_memcpy(void *dest, uint32 src, size_t n) {return vm_memcpy(dest, src, n);}
 static inline void *Host2Mac_memcpy(uint32 dest, const void *src, size_t n) {return vm_memcpy(dest, src, n);}
